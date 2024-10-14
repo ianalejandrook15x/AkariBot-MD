@@ -167,10 +167,10 @@ const pp = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://qu.ax/
 
 await m.react('🍁') 
 
-await conn.sendMessage(m.chat, { video: { url: vid }, caption: text.trim(), contextInfo: { mentionedJid: [m.sender], isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: '120363318758721861@newsletter', newsletterName: 'Tҽαɱ Cԋαɳɳҽʅ Iαɳ 🌸', serverMessageId: -1, }, forwardingScore: 999, externalAdReply: { title: 'ᥡᥲᥱm᥆rі ᑲ᥆𝗍 ᰔᩚ', body: dev, thumbnailUrl: icono, sourceUrl: redes, mediaType: 1, renderLargerThumbnail: false,
+await conn.sendMessage(m.chat, { video: { url: vid }, caption: text.trim(), contextInfo: { mentionedJid: [m.sender], isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: '120363318758721861@newsletter', newsletterName: 'Tҽαɱ Cԋαɳɳҽʅ Iαɳ 🌸', serverMessageId: -1, }, forwardingScore: 999, externalAdReply: { title: 'Aƙαɾι Bσƚ ༊', body: dev, thumbnailUrl: icono, sourceUrl: redes, mediaType: 1, renderLargerThumbnail: false,
 }, }, gifPlayback: true, gifAttribution: 0 }, { quoted: fkontak })
 
-//await conn.sendMessage(m.chat, {text: text, contextInfo: { forwardingScore: 999, isForwarded: true, forwardedNewsletterMessageInfo: { newsletterName: 'Tҽαɱ Cԋαɳɳҽʅ Iαɳ 🌸', newsletterJid: "120363318758721861@newsletter", }, externalAdReply: { title: 'ᥡᥲᥱm᥆rі ᑲ᥆𝗍 ᰔᩚ', body: dev, thumbnailUrl: 'https://qu.ax/HHXnW.jpg', sourceUrl: redeshost, mediaType: 1, renderLargerThumbnail: true }}}, {quoted: fkontak})
+//await conn.sendMessage(m.chat, {text: text, contextInfo: { forwardingScore: 999, isForwarded: true, forwardedNewsletterMessageInfo: { newsletterName: 'Tҽαɱ Cԋαɳɳҽʅ Iαɳ 🌸', newsletterJid: "120363318758721861@newsletter", }, externalAdReply: { title: 'Aƙαɾι Bσƚ ༊', body: dev, thumbnailUrl: 'https://qu.ax/HHXnW.jpg', sourceUrl: redeshost, mediaType: 1, renderLargerThumbnail: true }}}, {quoted: fkontak})
 
   } catch (e) {
     await m.react(error)
