@@ -1,46 +1,28 @@
+
 import fetch from 'node-fetch'
 
 let handler  = async (m, { conn, usedPrefix, command }) => {
 
-let grupos = `*Hola!, te invito a unirte a los grupos oficiales de del Bot para convivir con la comunidad :D* 🌸
+let grupos = `*Hola!, te invito a unirte a los grupos oficiales del Bot para convivir con la comunidad* 🍂
 
-1- AkariBot 🍭
+1- Tҽαɱ Cԋαɳɳҽʅ Iαɳ 🌸
 *✰* ${grupo}
-
-2- AkariBot2 🍭
-*✰* ${grupo2}
-
-3- ⚡︎ Sunlight - Team ⚡︎
-*✰* ${grupo3}
-
-*─ׄ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׄ*
-
-*♡ Grupo de colaboración*
-
-1- 𝙶𝚊𝚝𝚊𝙱𝚘𝚝 💞 𝚈𝚊𝚎𝚖𝚘𝚛𝚒𝙱𝚘𝚝
-*✰* ${grupo4}
-
-2- 💫 𝙲𝚞𝚛𝚒𝚘𝚜𝚒𝚝𝚢 × 𝚈𝚊𝚎𝚖𝚘𝚛𝚒𝙱𝚘𝚝 ✨️
-*✰* ${grupo5}
 
 *─ׄ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׅ─ׄ⭒─ׄ─ׄ*
 
 ➠ Enlace anulado? entre aquí! 
 
-♡ Canal :
+☁ Canal :
 *✰* ${channel}
-
-♡ Canal Sunlight Team :
-*✰* ${channel2}
 
 > ${dev}`
 
-await conn.sendFile(m.chat, imagen3, "yaemori.jpg", grupos, fkontak, null, rcanal)
+await conn.sendFile(m.chat, imagen2, "akari.jpg", grupos, m, null, rcanal)
 
 await m.react(emojis)
 
 }
 handler.help = ['grupos']
 handler.tags = ['main']
-handler.command = ['grupos', 'aigrupos', 'gruposai']
+handler.command = ['grupos', 'iangrupos', 'gruposian']
 export default handler
