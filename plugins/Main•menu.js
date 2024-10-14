@@ -103,7 +103,7 @@ txt+= "✬✭✰✬"
         ],
     });
 
-    let vid = "https://qu.ax/lHgv.mp4";
+    let vid = "https://qu.ax/DPsBP.mp4";
     let img = "https://qu.ax/DwRoz.jpg";
     let img2 = "https://qu.ax/HHXnW.jpg";
 
