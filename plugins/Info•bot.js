@@ -20,7 +20,7 @@ conn.reply(m.chat, `El comando *.help* no se encuentra disponible debido a un fa
 
 if (chat.isBaneed) return
 if (/^akari|watanabe$/i.test(m.text)) {
-conn.reply(m.chat, `> *Hola soy AkariBot-MD y fui creada por*\n\n> ianalejandrook15x \n\n> Escribe *.menu* para ver mis comandos, recuerda no hagas spam a la bot, Disfrute de *AkariBot-;D*\n\nPσɯҽɾҽԃ Bყ Tҽαɱ SHιɳιɳɠ 🌙`, m, rcanal, )
+conn.reply(m.chat, `> *Hola soy AkariBot-MD y fui creada por*\n> *ianalejandrook15x* \n\n> Escribe *.menu* para ver mis comandos, recuerda no hagas spam a la bot, Disfrute de *AkariBot-MD*\n\nPσɯҽɾҽԃ Bყ Tҽαɱ SHιɳιɳɠ 🌙`, m, rcanal, )
 }
 
 if (chat.isBaneed) return
