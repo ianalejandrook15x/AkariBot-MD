@@ -39,7 +39,7 @@ conn.sendMessage(m.chat, {image: {url: 'https://telegra.ph/file/26d87a519e24fe3f
 }
 
 }
-handler.help = ['instalaryaemori']
+handler.help = ['instalarakari']
 handler.tags = ['main']
 handler.command = ['instalarbot', 'instalarai', 'botinstalar', 'aiinstalar', 'instalaryaemori', 'yaemoriinstalar']
 export default handler
