@@ -23,28 +23,28 @@ let txt = `*乂  Y O U T U B E  -  P L A Y  乂*\n\n`
 
 let listSections = []
 listSections.push({
-title: `✎ SELECCIÓNA LO QUE NECESITES`, highlight_label: ``,
+title: `SELECCIÓNA LO QUE NECESITES`, highlight_label: ``,
 rows: [
 {
-header: "𓆩࿔ྀુ⃟🌹⃟𝘼𝙐𝘿𝙄𝙊 ╎ 🎵",
+header: "Aυԃισ ღ ╎ 🎵",
 title: "",
 description: `🎵 Audio.`,
 id: `#play1 mp3 ${text}`,
 },
 {
-header: "𓆩࿔ྀુ⃟🌹⃟𝙑𝙄𝘿𝙀𝙊 ╎ 📽",
+header: "Vιԃҽσ ღ ╎ 📽",
 title: "",
 description: `📽 Video.`,
 id: `#play1 mp4 ${text}`,
 },
 {
-header: "𓆩࿔ྀુ⃟🌹⃟𝘼𝙐𝘿𝙄𝙊𝘿𝙊𝘾 ╎ 🎵",
+header: "AυԃισDσƈ ღ ╎ 🎵",
 title: "",
 description: `🎵 AudioDoc.`,
 id: `#play1 mp3doc ${text}`,
 },
 {
-header: "𓆩࿔ྀુ⃟🌹⃟𝙑𝙄𝘿𝙀𝙊𝘿𝙊𝘾 ╎ 📽",
+header: "VιԃҽσDσƈ ღ ╎ 📽",
 title: "",
 description: `📽 VideoDoc.`,
 id: `#play1 mp4doc ${text}`,
@@ -52,7 +52,7 @@ id: `#play1 mp4doc ${text}`,
 ],
 })
 let menu = ''
-await conn.sendListB(m.chat, menu, txt, ` 𓏲᭨ ̤̤֟✧⏤͟͞ू⃪٭ۣۜ ፝͜⁞Oᴘᴄɪᴏɴᴇs ᭄፝🌸𑜟꙲𒁑⁩`, yt_play[0].thumbnail, listSections, m)
+await conn.sendListB(m.chat, menu, txt, `*ੈ✩‧₊˚Oρƈισɳҽʂ 🌸 .ೃ࿐⁩`, yt_play[0].thumbnail, listSections, m)
 await m.react(done)
 } catch {
 await m.react(error)
