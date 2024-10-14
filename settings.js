@@ -11,17 +11,13 @@ import moment from 'moment-timezone'
 
 //BETA: Si quiere evitar escribir el número que será bot en la consola, agregué desde aquí entonces:
 //Sólo aplica para opción 2 (ser bot con código de texto de 8 digitos)
-global.botNumberCode = '' //Ejemplo: +59169082575
+global.botNumberCode = '' //Ejemplo: +5493876639332
 global.confirmCode = ''
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
 global.owner = [
-   ['59169082575', 'Creador 👑', true],
-   ['59169082575', 'Owner 🍭', true],
-   ['5493876639332'],
-   ['5493794297363'],
-   ['5351524614']
+   ['5493876639332', 'Creador 👑', true],
 ]
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
@@ -39,17 +35,17 @@ global.vs = '2.0.7'
 global.languaje = 'Español'
 global.nameqr = 'Akari Bot - MD'
 global.namebot = 'ᥡᥲᥱm᥆rі ᑲ᥆𝗍 ᰔᩚ'
-global.sessions = 'MiniSession'
-global.jadi = 'MiniJadiBot'
+global.sessions = 'AkariSession'
+global.jadi = 'AkariJadiBot'
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
 global.packname = 'Yσƚʂυზα Nαƙαɳσ - MD'
 global.botname = 'Akari Bot - MD 🌸'
 global.wm = 'AkariBot-MD 🌸'
-global.author = 'By ianalejandrook15x Develop'
-global.dev = 'Pσɯҽɾҽԃ Bყ Aʅზα-Tҽαɱ'
-global.textbot = 'Akari Nankano : ianalejandrook15x 🌸'
+global.author = 'By ianalejandrook15x'
+global.dev = 'Pσɯҽɾҽԃ Bყ Tҽαɱ Sԋιɳιɳɠ'
+global.textbot = 'Akari Watanabe : ianalejandrook15x 🌸'
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
@@ -64,25 +60,22 @@ global.avatar = fs.readFileSync('./src/img/avatar_contact.jpg')
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-global.grupo = 'https://chat.whatsapp.com/DBV1zXbwYjL43uuI6s2Rhu' //AkariBot
-global.grupo2 = 'https://chat.whatsapp.com/EVc2XJuZwjnKKdWUsRYmms' //AkariBot2
-global.grupo3 = 'https://chat.whatsapp.com/E8pLRSvjnMHJadRqXXUbaO' //team oficial
-global.grupo4 = 'https://chat.whatsapp.com/Ksd32KH9zFoDmO1PJt44M7' //GataBot & AkariBot
-global.grupo5 = 'https://chat.whatsapp.com/CrcXTQMXHzdAuQPVhaAJlm' //Curiosity & AkariBot
-global.channel = 'https://whatsapp.com/channel/0029VaQD7LAJP216tu9liI2A'
-global.channel2 = 'https://whatsapp.com/channel/0029Vam7yUg77qVaz3sIAp0z'
+global.grupo = 'https://chat.whatsapp.com/KiJY7gZS17aLcP6qaGatFX'
+global.grupo2 = 'https://chat.whatsapp.com/JJGQs5aCsTsAsHbw752fBv'
+global.grupo3 = 'https://chat.whatsapp.com/G2bAsa8E11mLLitGxI0iUQ'
+global.channel = 'https://whatsapp.com/channel/0029VajkZ6bIXnlwPZmbuH1u'
 global.md = 'https://github.com/ianalejandrook15x/AkariBot-MD' 
-global.yt = 'https://www.youtube.com/@OfcDiego'
-global.tiktok = 'https://tiktok.com/@dev_diego'
-global.correo = 'theyaemoribot@gmail.com'
+global.yt = 'https://www.youtube.com/@ianalejandrook14x'
+global.tiktok = 'https://tiktok.com/@ian.ian271'
+global.correo = 'alejandroxddd92@gmail.com'
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-global.estilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "5219992095479-1625305606@g.us" } : {}) }, message: { orderMessage: { itemCount : -999999, status: 1, surface : 1, message: 'Bσƚ ԃҽ WԋαƚʂAρρ', orderTitle: 'Bang', thumbnail: catalogo, sellerJid: '0@s.whatsapp.net'}}}
+global.estilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "543876577197-120363317332020195@g.us" } : {}) }, message: { orderMessage: { itemCount : -999999, status: 1, surface : 1, message: 'Bσƚ ԃҽ WԋαƚʂAρρ', orderTitle: 'Bang', thumbnail: catalogo, sellerJid: '0@s.whatsapp.net'}}}
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-global.esti = { key: {participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "6289643739077-1613049930@g.us" } : {})},message: {"videoMessage": { "title": `Yσƚʂυზα Nαƙαɳσ`, "h": `Hmm`,'seconds': '99999', 'gifPlayback': 'true', 'caption': `Bσƚ ԃҽ WԋαƚʂAρρ`, 'jpegThumbnail': catalogo }}}
+global.esti = { key: {participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "6289643739077-1613049930@g.us" } : {})},message: {"videoMessage": { "title": `Aƙαɾι WαƚαɳαႦҽ`, "h": `Hmm`,'seconds': '99999', 'gifPlayback': 'true', 'caption': `Bσƚ ԃҽ WԋαƚʂAρρ`, 'jpegThumbnail': catalogo }}}
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
