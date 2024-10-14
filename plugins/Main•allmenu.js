@@ -29,28 +29,28 @@ let tags = {
 }
 
 const defaultMenu = {
-  before: `© mᥱᥒᥙ ᥆𝖿іᥴіᥲᥣ ძᥱ ᥡᥲᥱm᥆rіᑲ᥆𝗍 ☁️
+  before: `Mҽɳυ ԃҽ Aƙαɾι 🌸
 
-*•/• Info usuario •/•*
+*ੈ✩‧₊˚ Info usuario ⋆.ೃ࿔*:･
 
 🌸 Cliente » \`\`\`%name\`\`\`
-✨️ Exp » \`\`\`%exp\`\`\`
+✨ Exp » \`\`\`%exp\`\`\`
 💴 Yenes » \`\`\`%yenes\`\`\`
 🛡 Nivel » \`\`\`%level\`\`\`
 💫 Rango » \`\`\`%role\`\`\`
 
-*•/• Info del bot •/•*
+*ੈ✩‧₊˚ Iɳϝσ ԃҽ ʅα Ⴆσƚ ⋆.ೃ࿔*:･
 
-👑 Made by » \`\`\`@ianalejandrook15x\`\`\`
+🌸 Made by » \`\`\`@ianalejandrook15x\`\`\`
 🌸 Bot » \`\`\`%botofc\`\`\`
-📆 Fecha » \`\`\`%fecha\`\`\`
-🕖 Actividad » \`\`\`%muptime\`\`\`
-👤 Usuarios » \`\`\`%totalreg\`\`\`
+🌸 Fecha » \`\`\`%fecha\`\`\`
+🌸 Actividad » \`\`\`%muptime\`\`\`
+🌸 Usuarios » \`\`\`%totalreg\`\`\`
 
 \t*L I S T A  -  D E  -  C O M A N D O S* 
 `.trimStart(),
-    header: '*•/• %category •/•*\n',
-  body: '✰ %cmd',
+    header: '「 %category 」\n',
+  body: 'ღ %cmd',
   footer: '',
   after: `> ${dev}`,
 }
@@ -161,16 +161,16 @@ const gif = await response.buffer()
 
 const who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 
-const pp = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://qu.ax/AdwJ.jpg')
+const pp = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://qu.ax/TcfhE.jpg')
 
 //await conn.reply(m.chat, '*Próximamente se remitirá el menú.*', fkontak, { contextInfo:{ forwardingScore: 2022, isForwarded: true, externalAdReply: {title: packname, body: dev, sourceUrl: redeshost, thumbnail: await (await fetch(pp)).buffer() }}})
 
-await m.react('⭐️') 
+await m.react('🍁') 
 
-await conn.sendMessage(m.chat, { video: { url: vid }, caption: text.trim(), contextInfo: { mentionedJid: [m.sender], isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: '120363318758721861@newsletter', newsletterName: '© ᥡᥲᥱm᥆rіᑲ᥆𝗍 - ᥴһᥲᥒᥒᥱᥣ 🌸', serverMessageId: -1, }, forwardingScore: 999, externalAdReply: { title: 'ᥡᥲᥱm᥆rі ᑲ᥆𝗍 ᰔᩚ', body: dev, thumbnailUrl: icono, sourceUrl: redes, mediaType: 1, renderLargerThumbnail: false,
+await conn.sendMessage(m.chat, { video: { url: vid }, caption: text.trim(), contextInfo: { mentionedJid: [m.sender], isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: '120363318758721861@newsletter', newsletterName: 'Tҽαɱ Cԋαɳɳҽʅ Iαɳ 🌸', serverMessageId: -1, }, forwardingScore: 999, externalAdReply: { title: 'ᥡᥲᥱm᥆rі ᑲ᥆𝗍 ᰔᩚ', body: dev, thumbnailUrl: icono, sourceUrl: redes, mediaType: 1, renderLargerThumbnail: false,
 }, }, gifPlayback: true, gifAttribution: 0 }, { quoted: fkontak })
 
-//await conn.sendMessage(m.chat, {text: text, contextInfo: { forwardingScore: 999, isForwarded: true, forwardedNewsletterMessageInfo: { newsletterName: '© ᥡᥲᥱm᥆rіᑲ᥆𝗍 - ᥴһᥲᥒᥒᥱᥣ 🌸', newsletterJid: "120363318758721861@newsletter", }, externalAdReply: { title: 'ᥡᥲᥱm᥆rі ᑲ᥆𝗍 ᰔᩚ', body: dev, thumbnailUrl: 'https://qu.ax/OlTj.jpg', sourceUrl: redeshost, mediaType: 1, renderLargerThumbnail: true }}}, {quoted: fkontak})
+//await conn.sendMessage(m.chat, {text: text, contextInfo: { forwardingScore: 999, isForwarded: true, forwardedNewsletterMessageInfo: { newsletterName: 'Tҽαɱ Cԋαɳɳҽʅ Iαɳ 🌸', newsletterJid: "120363318758721861@newsletter", }, externalAdReply: { title: 'ᥡᥲᥱm᥆rі ᑲ᥆𝗍 ᰔᩚ', body: dev, thumbnailUrl: 'https://qu.ax/HHXnW.jpg', sourceUrl: redeshost, mediaType: 1, renderLargerThumbnail: true }}}, {quoted: fkontak})
 
   } catch (e) {
     await m.react(error)
