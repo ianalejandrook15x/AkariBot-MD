@@ -59,12 +59,6 @@ txt+= "✬✭✰✬"
                 id: `#allmenu`,
             },
             {
-                header: "Mҽɳυ NSFW ╎ 🌸",
-                title: "",
-                description: `🔥 Muestra el menú +18.`,
-                id: `#hornymenu`,
-            },
-            {
                 header: "Gιƚ HυႦ ╎ ⭐️",
                 title: "",
                 description: `🌸 Muestra el github de la bot.`,
