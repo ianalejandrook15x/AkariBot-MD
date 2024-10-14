@@ -44,16 +44,16 @@ let totalreg = Object.keys(global.db.data.users).length
   let old = performance.now()
   let neww = performance.now()
   let speed = neww - old
-  let infobt = `🍭 *I N F O - Y A E M O R I*
+  let infobt = ` *I N F O - A K A R I*
   
 *_ESTADO_*
-🌸͜͡ޮ ⋄ Chats de grupo: *${groupsIn.length}*
-🌺͜͡ޮ ⋄ Grupos unidos: *${groupsIn.length}*
-🌸͜͡ޮ ⋄ Grupos abandonados: *${groupsIn.length - groupsIn.length}*
-🌺͜͡ޮ ⋄ Chats privados: *${chats.length - groupsIn.length}*
-🌸͜͡ޮ ⋄ Total Chats: *${chats.length}*
-🌺͜͡ޮ ⋄ Registrados: *${totalreg}*
-🌸͜͡ޮ ⋄ Tiempo Activo: *${uptime}*
+🌸ꕥ Chats de grupo: *${groupsIn.length}*
+🌺ꕥ Grupos unidos: *${groupsIn.length}*
+🌸ꕥ Grupos abandonados: *${groupsIn.length - groupsIn.length}*
+🌺ꕥ Chats privados: *${chats.length - groupsIn.length}*
+🌸ꕥ Total Chats: *${chats.length}*
+🌺ꕥ Registrados: *${totalreg}*
+🌸ꕥ Tiempo Activo: *${uptime}*
 
 
 
