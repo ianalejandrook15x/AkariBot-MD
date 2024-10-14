@@ -59,7 +59,7 @@ if (!db.data.chats[m.chat].modohorny && m.isGroup) throw '🌸 *¡Estos comandos
           mediaType: 1, 
           showAdAttribution: true,
           title: packname,
-          body: '🌟 Akari Nankano - MD',
+          body: '🌟 Akari Watanabe - MD',
           previewType: 0, 
           thumbnail: icons,
           sourceUrl: redes 
