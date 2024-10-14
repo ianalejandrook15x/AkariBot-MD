@@ -31,21 +31,21 @@ global.prems = []
 global.isBaileysFail = false
 global.libreria = 'Baileys'
 global.baileys = 'V 6.7.8'
-global.vs = '2.0.7'
+global.vs = '1.0.1'
 global.languaje = 'Español'
 global.nameqr = 'Akari Bot - MD'
-global.namebot = 'ᥡᥲᥱm᥆rі ᑲ᥆𝗍 ᰔᩚ'
+global.namebot = 'Aƙαɾι Bσƚ - MD'
 global.sessions = 'AkariSession'
 global.jadi = 'AkariJadiBot'
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-global.packname = 'Yσƚʂυზα Nαƙαɳσ - MD'
-global.botname = 'Akari Bot - MD 🌸'
-global.wm = 'AkariBot-MD 🌸'
+global.packname = 'Aƙαɾι Bσƚ - MD'
+global.botname = 'Aƙαɾι - MD 🌸'
+global.wm = 'AƙαɾιBσƚ-MD 🌸'
 global.author = 'By ianalejandrook15x'
 global.dev = 'Pσɯҽɾҽԃ Bყ Tҽαɱ Sԋιɳιɳɠ'
-global.textbot = 'Akari Watanabe : ianalejandrook15x 🌸'
+global.textbot = 'Aƙαɾι : ιαɳαʅҽʝαɳԃɾσσƙ15x 🌸'
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
