@@ -2,7 +2,7 @@ import fetch from 'node-fetch'
 
 var handler = async (m, { conn, usedPrefix, command, text }) => {
 
-if (!text) return conn.reply(m.chat, `🌸 *Ingrese el nombre de algun anime*\n\nEjemplo, ${usedPrefix + command} Akari Nankano`, m, rcanal)
+if (!text) return conn.reply(m.chat, `🌸 *Ingrese el nombre de algun anime*\n\nEjemplo, ${usedPrefix + command} Kimetsu No Yaiba`, m, rcanal)
 let res = await fetch('https://api.jikan.moe/v4/manga?q=' + text)
 if (!res.ok) return conn.reply(m.chat, `🌸 *Ocurrió un fallo*`, m, rcanal)
 
