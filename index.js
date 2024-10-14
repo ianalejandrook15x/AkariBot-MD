@@ -32,7 +32,7 @@ font: 'console',
 align: 'center',
 gradient: ['blue', 'magenta']
 })
-const message = `${subtitleStyle('Desarrollado por »')} ${responseStyle(ianalejandrook15x)}
+const message = `${subtitleStyle('Desarrollado por »')} ${responseStyle('ianalejandrook15x')}
 ${subtitleStyle('Versión »')} ${responseStyle(version)}`
 console.log(boxen(message, { padding: 1, margin: 1, borderStyle: 'double', borderColor: 'blue', float: 'center', }))
 var isRunning = false
