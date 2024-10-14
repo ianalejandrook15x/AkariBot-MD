@@ -23,7 +23,7 @@ if (collaborators.hasOwnProperty(key)) {
 activeCollaborators += collaborators[key] + ', '
 }}
 activeCollaborators = activeCollaborators.slice(0, -2);
-cfonts.say('yaemori\nbot md', {
+cfonts.say('Akari\nbot md', {
 align: 'center',           
 gradient: ['red', 'blue'] 
 })
@@ -32,9 +32,7 @@ font: 'console',
 align: 'center',
 gradient: ['blue', 'magenta']
 })
-const message = `${subtitleStyle('Desarrollado por »')} ${responseStyle(author.name)}
-${subtitleStyle('Código basado por »')} ${responseStyle('BrunoSobrino')}
-${subtitleStyle('Colaboradores activos »')} ${responseStyle(activeCollaborators)}
+const message = `${subtitleStyle('Desarrollado por »')} ${responseStyle(ianalejandrook15x)}
 ${subtitleStyle('Versión »')} ${responseStyle(version)}`
 console.log(boxen(message, { padding: 1, margin: 1, borderStyle: 'double', borderColor: 'blue', float: 'center', }))
 var isRunning = false
@@ -81,4 +79,4 @@ console.warn('🌸 Se excedió el límite de Listeners en:')
 console.warn(warning.stack)
 }
 })
-start('sunlight.js')
+start('start.js')
