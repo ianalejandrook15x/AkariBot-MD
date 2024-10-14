@@ -30,10 +30,7 @@ let handler = async (m, { conn, usedPrefix, text, args, command }) => {
     m.react("🌸");
     let menu = ``;
 
-    let txt =  `િ ฺ࣭࣪͘ \`ʜᴏʟᴀ\` p𝖾𝗋᷼𝗌᷼♤𝗇᷼𝗂𝗍α    𝗅𝗂𝗇𝖽α   (⁠◍⁠•⁠ᴗ⁠•⁠◍⁠)⁠✧⁠*⁠。
- b𝗂𝖾𝗇𝖾𝗇𝗂𝖽𝗈   𝖺   ყαҽɱσɾι Ⴆσƚ꒱㇀  🌸‛᩠⋆  ⪦┽  :
- •ㅤ༚      𝆹ㅤㅤ•ㅤ༚         𝆹ㅤㅤㅤ•ᨘ
-`
+    let txt =  `Hσʅα ! Sσყ Aƙαɾι WαƚαɳαႦҽ, ρҽɾʂσɳιƚα ʅιɳԃα αϙυι ƚιҽɳҽʂ ɱι ɱҽɳυ`
 txt+= '.͜°˖ `ᴄʀᴇᴀᴅᴏʀ ::`' + ` ianalejandrook15x\n`;
 txt+= '.͜°˖ `ʙᴏᴛ ::`' + ` AkariBot-MD\n`;
 txt+= '.͜°˖ `ꜰᴇᴄʜᴀ ::`' + ` ${moment.tz('America/Bogota').format('DD/MM/YY')}\n`;
@@ -47,64 +44,64 @@ txt+= "✬✭✰✬"
     let listSections = [];
 
         listSections.push({
-        title: `✎ SELECCIÓNA LO QUE NECESITES`, highlight_label: `Popular AkariBot`,
+        title: `SELECCIÓNA LO QUE NECESITES`, highlight_label: `Popular AkariBot`,
         rows: [
             {
-                header: "𓆩࿔ྀુ⃟🌹⃟𝘼𝙐𝙏𝙊 𝙑𝙀𝙍𝙄𝙁𝙄𝘾𝘼𝙍 ╎✅",
+                header: "Aυƚσ Vҽɾιϝιƈαɾ ╎🌸",
                 title: "",
                 description: `🗃 Verificacion Automáticamente`,
                 id: `#reg ${name}.18`,
             },
             {
-                header: "𓆩࿔ྀુ⃟🌹⃟𝙈𝙀𝙉𝙐 𝘾𝙊𝙈𝙋𝙇𝙀𝙏𝙊 ╎ 🍿ꪳ͢",
+                header: "Mҽɳυ Cσɱρʅҽƚσ ╎ 🌸",
                 title: "",
                 description: `🌸 Muestra el menú completo.`,
                 id: `#allmenu`,
             },
             {
-                header: "𓆩࿔ྀુ⃟🌹⃟𝙈𝙀𝙉𝙐 𝙉𝙎𝙁𝙒 ╎🔞",
+                header: "Mҽɳυ NSFW ╎ 🌸",
                 title: "",
                 description: `🔥 Muestra el menú +18.`,
                 id: `#hornymenu`,
             },
             {
-                header: "𓆩࿔ྀુ⃟🌹⃟𝙂𝙄𝙏𝙃𝙐𝘽 ╎ ⭐️",
+                header: "Gιƚ HυႦ ╎ ⭐️",
                 title: "",
                 description: `🌸 Muestra el github de la bot.`,
                 id: `#sc`,
             },
             {
-                header: "𓆩࿔ྀુ⃟🌹⃟𝙎𝙆𝙔 𝙐𝙇𝙏𝙍𝘼 𝙋𝙇𝙐𝙎 ╎ 💸",
+                header: "Sƙყ Uʅƚɾα Pʅυʂ ╎ 💸",
                 title: "",
                 description: `⚡️ Super hosting, Sky Ultra Plus.`,
                 id: `#skyplus`,
             },
             {
-                header: "𓆩࿔ྀુ⃟🌹⃟𝙎𝙋𝙀𝙀𝘿 ╎ 🌸",
+                header: "Sρҽҽԃ ╎ 🌸",
                 title: "",
                 description: `🚀 Muestra su velocidad y mas.`,
                 id: `#speed`,
             },
             {
-                header: "𓆩࿔ྀુ⃟🌹⃟𝙎𝙀𝙍𝘽𝙊𝙏 𝘾𝙊𝘿𝙀  ╎ ⚡️",
+                header: "SҽɾႦσƚ Cσԃҽ  ╎ 🌸",
                 title: "",
                 description: `🌸 Ser subbot mediante un codigo de 8 digitos.`,
                 id: `#code`,
             },
             {
-                header: "𓆩࿔ྀુ⃟🌹⃟𝙎𝙀𝙍𝘽𝙊𝙏 𝙌𝙍 ╎ 📂",
+                header: "SҽɾႦσƚ QR ╎ 🌸",
                 title: "",
                 description: `☁️ Ser subbot mediante un codigo QR.`,
                 id: `#serbot`,
             },
             {
-                header: "𓆩࿔ྀુ⃟🌹⃟𝙎𝙐𝘽𝘽𝙊𝙏𝙎 ╎ 🌸",
+                header: "SυႦ Bσƚʂ ╎ 🌸",
                 title: "",
                 description: `🟢 Muestra su subbots onlines.`,
                 id: `#bots`,
             },
             {
-                header: "𓆩࿔ྀુ⃟🌹⃟𝙂𝙍𝙐𝙋𝙊𝙎 ☁️",
+                header: "Gɾυρσʂ 🌸",
                 title: "",
                 description: `📲 Muestra los grupos principales de la bot.`,
                 id: `#grupos`,
@@ -112,11 +109,11 @@ txt+= "✬✭✰✬"
         ],
     });
 
-    let vid = "https://qu.ax/yddg.jpg";
-    let img = "https://qu.ax/QBlx.jpg";
-    let img2 = "https://qu.ax/Sewfs.jpg";
+    let vid = "https://qu.ax/lHgv.mp4";
+    let img = "https://qu.ax/DwRoz.jpg";
+    let img2 = "https://qu.ax/HHXnW.jpg";
 
-    await conn.sendListB(m.chat, menu, txt, ` 𓏲᭨ ̤̤֟✧⏤͟͞ू⃪٭ۣۜ ፝͜⁞M͢ᴇɴᴜs۫۫۫۫۫۫۫۫ ᭄፝🌸𑜟꙲𒁑⁩`, [vid, img, img2].getRandom(), listSections, esti);
+    await conn.sendListB(m.chat, menu, txt, `*ೃ༄ Mҽɳυ 🌸 ೄྀ࿐⁩`, [vid, img, img2].getRandom(), listSections, esti);
 };
 
 handler.tags = ['main'];
