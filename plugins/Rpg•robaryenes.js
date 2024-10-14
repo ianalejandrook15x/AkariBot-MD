@@ -18,7 +18,7 @@ return;
   }
   const users = global.db.data.users[who];
   const rob = Math.floor(Math.random() * ro);
-  if (users.yenes < rob) return conn.reply(m.chat, `😔 @${who.split`@`[0]} Tiene menos de *${ro} Yenes 💴*\nNo robes a un pobre :v`, m, {mentions: [who]});
+  if (users.yenes < rob) return conn.reply(m.chat, `😔 @${who.split`@`[0]} Tiene menos de *${ro} Yenes 💴*\nNo robes a un pobre`, m, {mentions: [who]});
   global.db.data.users[m.sender].yenes += rob;
   global.db.data.users[who].yenes -= rob;
   conn.reply(m.chat, `*🌸 Robastes ${rob} Yenes 💴 a @${who.split`@`[0]}*`, m, {mentions: [who]});
