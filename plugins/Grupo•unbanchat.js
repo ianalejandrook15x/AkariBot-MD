@@ -1,9 +1,9 @@
 let handler = async (m, { conn }) => {
 if (!(m.chat in global.db.data.chats)) return conn.reply(m.chat, '🍭 *¡Este chat no está registrado!*', m, fake)
 let chat = global.db.data.chats[m.chat]
-if (!chat.isBanned) return conn.reply(m.chat, '🌸 *¡Akari Nankano no está baneada en este chat!*', m, fake)
+if (!chat.isBanned) return conn.reply(m.chat, '🌸 *Akari no está baneada en este chat*', m, fake)
 chat.isBanned = false
-await conn.reply(m.chat, '🌸 *¡Akari Nankano ya fué desbaneada en este chat!*', m, fake)
+await conn.reply(m.chat, '🌸 *Akari ya fué desbaneada en este chat*', m, fake)
 }
 handler.help = ['unbanchat'];
 handler.tags = ['grupo'];
