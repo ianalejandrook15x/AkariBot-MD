@@ -52,7 +52,7 @@ export async function before(m, { conn, participants, groupMetadata }) {
         mentionedJid: getMentionedJid(),
         "externalAdReply": {
           "thumbnail": welc,
-          "title": "  ͟͞ Ｗ Ｅ Ｌ Ｃ Ｏ Ｍ Ｅ ͟͞  ",
+          "title": "ೃ⁀➷ Ｗ Ｅ Ｌ Ｃ Ｏ Ｍ Ｅ .ೃ࿐",
           "body": `${userName}!`,
           "previewType": "PHOTO",
           "thumbnailUrl": null,
@@ -74,7 +74,7 @@ export async function before(m, { conn, participants, groupMetadata }) {
         "externalAdReply": {
           "showAdAttribution": true,
           "containsAutoReply": true,
-          "title": '  ͟͞ Ａ Ｄ Ｉ Ｏ́ Ｓ ͟͞  ',
+          "title": 'ೃ⁀➷ Aԃισʂ .ೃ࿐',
           body: `${userName}, se despide.`,
           "previewType": "PHOTO",
           "thumbnailUrl": '',
