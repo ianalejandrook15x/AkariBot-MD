@@ -7,11 +7,24 @@ if (chat.isBaneed) return
 if (/^bot$/i.test(m.text)) {
 conn.reply(m.chat, `🌸 ¡Hola! Soy Akari, en que puedo ayudarte hoy?\n\n✰ Usa *.menu* para ver mis comandos.`, m, rcanal, )
 }
-/*if (/^corin|corín|corinplus|corínplus|corinplushost|corínplushost|plus$/i.test(m.text)) {
-conn.reply(m.chat, `🚀 CorinPlus Hosting ¡El plus que necesitas!\n🌸 *Dash:* https://dash.corinplus.com\n🌸 *Panel:* https://ctrl.corinplus.com`, m, rcanal, )
-}*/
+
+if (chat.isBaneed) return
+if (/^.menu$/i.test(m.text)) {
+conn.reply(m.chat, `El comando *.menu* no se encuentra disponibles debido a un fallo con la API vuelva mas tarde ⚠\n\n> ianalejandrook15 `, m, rcanal, )
+}
+
+if (chat.isBaneed) return
+if (/^.help$/i.test(m.text)) {
+conn.reply(m.chat, `El comando *.help* no se encuentra disponibles debido a un fallo con la API vuelva mas tarde ⚠\n\n> ianalejandrook15 `, m, rcanal, )
+}
+
+if (chat.isBaneed) return
+if (/^reglas$/i.test(m.text)) {
+conn.reply(m.chat, `*Hola si quieres unir a la bot deberas seguir las reglas basicas* 👇\n> No hacer spam a la bot\n> No llamar a la bot\n> El grupo debe de tener un minimo de 25 miembros o no sera otorgado el bot\n> No añadir a la bot sin permisos del creador \n> Wa.me/5493876639332\n> Disfrute de *AkariBot-MD Powered By Ianalejandrook15x*`, m, rcanal, )
+}
+  
 if (/^ian$/i.test(m.text)) {
-conn.reply(m.chat, `Hσʅα Iαɳ ҽʂ ɱι ƈɾҽαԃσɾ`, m, rcanal, )
+conn.reply(m.chat, `Hola Ian es mi creador, si deseas unir a la bot puedes contactarte con el aqui te dejo su numero\n\n> wa.me/5493876639332`, m, rcanal, )
 }
 return !0;
 };
