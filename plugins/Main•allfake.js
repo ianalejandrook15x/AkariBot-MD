@@ -33,21 +33,21 @@ let user = global.db.data.users[who]
 let pushname = m.pushName || 'Sin nombre'
 
 //creador y otros
-global.creador = 'Wa.me/5493876432076'
+global.creador = 'Wa.me/5493876639332'
 global.ofcbot = `${conn.user.jid.split('@')[0]}`
-global.asistencia = 'https://wa.me/message/O4QPPHZOFDOJI1'
-global.namechannel = '© All Rightd Reserved • AkariBot'
+global.asistencia = 'https://wa.me/5493876639332'
+global.namechannel = 'Tҽαɱ Cԋαɳɳҽʅ Iαɳ 🌸'
 
 //Reacciones De Comandos.!
 global.rwait = '🕒'
 global.done = '✅'
 global.error = '✖️'
 
-//Emojis determinado de Akari Nankano
+//Emojis determinado de Akari 
 global.emoji = '🌸'
 global.emoji2 = '🌸'
 global.emoji3 = '✨️'
-global.emoji4 = '🍭'
+global.emoji4 = '✨'
 global.emojis = [emoji, emoji2, emoji3, emoji4].getRandom()
 
 //mensaje en espera
