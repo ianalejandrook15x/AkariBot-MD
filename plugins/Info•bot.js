@@ -10,12 +10,17 @@ conn.reply(m.chat, `🌸 ¡Hola! Soy Akari, en que puedo ayudarte hoy?\n\n✰ Us
 
 if (chat.isBaneed) return
 if (/^.menu$/i.test(m.text)) {
-conn.reply(m.chat, `El comando *.menu* no se encuentra disponibles debido a un fallo con la API vuelva mas tarde ⚠\n\n> ianalejandrook15 `, m, rcanal, )
+conn.reply(m.chat, `El comando *.menu* no se encuentra disponible debido a un fallo con la API vuelva mas tarde ⚠\n\n> ianalejandrook15 `, m, rcanal, )
 }
 
 if (chat.isBaneed) return
 if (/^.help$/i.test(m.text)) {
-conn.reply(m.chat, `El comando *.help* no se encuentra disponibles debido a un fallo con la API vuelva mas tarde ⚠\n\n> ianalejandrook15 `, m, rcanal, )
+conn.reply(m.chat, `El comando *.help* no se encuentra disponible debido a un fallo con la API vuelva mas tarde ⚠\n\n> ianalejandrook15 `, m, rcanal, )
+}
+
+if (chat.isBaneed) return
+if (/^host$/i.test(m.text)) {
+conn.reply(m.chat, `> *Hola soy AkariBot-MD y fui creada por*\n\n> ianalejandrook15x \n\n> Escribe *.menu* para ver mis comandos, recuerda no hagas spam a la bot, Disfrute de *AkariBot-;D*\n\nPσɯҽɾҽԃ Bყ Tҽαɱ SHιɳιɳɠ 🌙`, m, rcanal, )
 }
 
 if (chat.isBaneed) return
