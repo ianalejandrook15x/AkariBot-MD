@@ -10,12 +10,12 @@ conn.reply(m.chat, `🌸 ¡Hola! Soy Akari, en que puedo ayudarte hoy?\n\n✰ Us
 
 if (chat.isBaneed) return
 if (/^.menu$/i.test(m.text)) {
-conn.reply(m.chat, `El comando *.menu* no se encuentra disponible debido a un fallo con la API vuelva mas tarde ⚠\n\n> ianalejandrook15 `, m, rcanal, )
+conn.reply(m.chat, `El comando *.menu* no se encuentra disponible debido a un fallo con la API vuelva mas tarde ⚠\n\n> ianalejandrook15\n\n> Escriba *.allmenu* `, m, rcanal, )
 }
 
 if (chat.isBaneed) return
 if (/^.help$/i.test(m.text)) {
-conn.reply(m.chat, `El comando *.help* no se encuentra disponible debido a un fallo con la API vuelva mas tarde ⚠\n\n> ianalejandrook15 `, m, rcanal, )
+conn.reply(m.chat, `El comando *.help* no se encuentra disponible debido a un fallo con la API vuelva mas tarde ⚠\n\n> ianalejandrook15\n\> Escriba *.allmenu* `, m, rcanal, )
 }
 
 if (chat.isBaneed) return
