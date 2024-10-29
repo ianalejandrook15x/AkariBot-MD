@@ -178,9 +178,9 @@ await conn.sendMessage(m.chat, { video: { url: vid }, caption: text.trim(), cont
     throw e
   }
 }
-handler.help = ['allmenu']
+handler.help = ['menu']
 handler.tags = ['main']
-handler.command = ['menuall', 'allmenú', 'allmenu', 'menucompleto'] 
+handler.command = ['meni', 'help', 'allmenu', 'menucompleto'] 
 handler.register = true
 
 export default handler
