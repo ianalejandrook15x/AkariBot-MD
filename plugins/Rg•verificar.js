@@ -39,7 +39,7 @@ regbot += `_____________________\n`
 regbot += `${packname}`
 await m.react('📩')
 await conn.sendMini(m.chat, '⊱『✅𝆺𝅥 𝗥𝗘𝗚𝗜𝗦𝗧𝗥𝗔𝗗𝗢(𝗔) 𝆹𝅥✅』⊰', textbot, regbot, imagen1, imagen1, channel, m)
-let chtxt = `🌐 *Idioma*: Español\n👤 *Usuario*: ${m.pushName || 'Anónimo'}\n✅ *Verificación:* ${user.name}\n🔢 *Edad:* ${user.age} años\n🐢 *Bot:* ${packname}`.trim()
+let chtxt = `${packname}`.trim()
 await conn.sendMessage('120363310433406751@newsletter', { text: chtxt, contextInfo: {
 externalAdReply: {
 title: "【 🔔 Notificación General 🔔 】",
