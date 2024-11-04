@@ -23,5 +23,5 @@ conn.reply(m.chat, teks, m, rcanal)
 handler.help = ['google <búsqueda>']
 handler.tags = ['buscador']
 handler.command = ['google']
-handler.register = true 
+handler.register = false
 export default handler
