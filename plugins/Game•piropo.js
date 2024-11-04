@@ -26,7 +26,7 @@ handler.command = ['piropo']
 handler.help = ['piropo']
 
 //handler.limit = 1
-handler.register = true 
+handler.register = false
 handler.fail = null
 handler.exp = 0
 
