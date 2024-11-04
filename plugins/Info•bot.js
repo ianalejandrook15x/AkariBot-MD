@@ -4,7 +4,7 @@ handler.all = async function(m) {
 
 const chat = global.db.data.chats[m.chat];
 if (chat.isBaneed) return
-if (/^No te perdono$/i.test(m.text)) {
+if (/^No Lo Siento Mucho$/i.test(m.text)) {
 conn.reply(m.chat, `Esta bien, agradezco tu sinceridad por haberme respondido, te deseo suerte.`, m, )
 }
 
