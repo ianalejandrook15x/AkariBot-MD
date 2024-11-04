@@ -40,6 +40,6 @@ handler.help = ['ds', 'fixmsgespera']
 handler.tags = ['info']
 handler.command = ['fixmsgespera', 'ds']
 
-handler.register = true
+handler.register = false
 
 export default handler
