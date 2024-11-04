@@ -64,7 +64,7 @@ handler.before = async (m) => {
 handler.help = ['transfer'].map((v) => v + ' [tipo] [cantidad] [@tag]');
 handler.tags = ['rpg'];
 handler.command = ['payxp', 'transfer', 'darxp', 'transferir'];
-handler.register = true
+handler.register = false
 export default handler;
 
 function special(type) {
