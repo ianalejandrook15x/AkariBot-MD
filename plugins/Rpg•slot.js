@@ -51,7 +51,7 @@ return await conn.reply(m.chat, `🎰 *S L O T S*\n─────────�
 handler.help = ['slot <apuesta>']
 handler.tags = ['fun']
 handler.command = ['slot']
-handler.register = true
+handler.register = false
 handler.group = false 
 export default handler
 
