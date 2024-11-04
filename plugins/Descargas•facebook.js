@@ -40,7 +40,6 @@ return conn.reply(m.chat, '🌸 *Error al enviar el video.*', m, rcanal)}}
 handler.help = ['facebook', 'fb']
 handler.tags = ['descargas']
 handler.command = ['facebook', 'fb']
-handler.yenes = 1
-handler.register = true
+handler.register = false
 
 export default handler
