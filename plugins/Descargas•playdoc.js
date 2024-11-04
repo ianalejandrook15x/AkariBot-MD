@@ -122,7 +122,7 @@ handler.tags = ['descargas']
 handler.command = ['playdoc', 'playdoc2', 'play3', 'play4']
 
 //handler.estrellas = 1
-handler.register = true
+handler.register = false
 
 export default handler
 
