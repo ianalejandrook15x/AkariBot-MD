@@ -7,7 +7,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
         const messageText = `Hola Valentina \nVengo a decirte que de hace mucho me gustas pero no fui capaz de darte amor y cariño, te quiero pedir disculpas por mi comportamiento en dejarte hablar\nPero con el tiempo me di cuenta que el error fue mio y quiero pedirte disculpas\nEstraño los abrazos que nos dabamos demostraban cariño, realmente quiero que me perdones y empezar otra vez. \n\n¿ Me Perdonas ?.`;
 
         await conn.sendButton(m.chat, messageText, 'Declaración', imageUrl, [
-            ['Sí Te perdono', `${usedPrefix}Si`],
+            ['Sí Acepto Salir Contigo', `${usedPrefix}Si`],
             ['No Lo Siento Mucho', `${usedPrefix}No`]
         ], m);
     }
@@ -52,9 +52,9 @@ let noHandler = async (m, { conn, usedPrefix, command }) => {
 };
 
 // Vincular los comandos al texto "#declaracion", "si", y "no"
-handler.command = ['perdon', 'si', 'no'];
+handler.command = ['declaracion', 'si', 'no'];
 handler.tags = ["downloader"]
-handler.help = ["perdon"];
+handler.help = ["declaracion"];
 
 // Exportar el handler
 export default handler;
