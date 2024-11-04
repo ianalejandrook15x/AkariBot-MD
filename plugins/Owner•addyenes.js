@@ -22,12 +22,13 @@ let handler = async (m, { conn, text }) => {
 ┏━━━━━━━━━━━⬣
 ┃⋄ *Total:* ${dmt}
 ┗━━━━━━━━━━━⬣`, m, rcanal)
-   conn.fakeReply(m.chat, `⊜ *_Recibiste_* \n\n *_+${dmt} Yenes 💴_*`, who, m.text)
+   conn.fakeReply(m.chat, `⊜ *Recibiste* \n\n *+${dmt} Yenes 💴*`, who, m.text)
 }
 
 handler.help = ['addyenes *<@user>*']
 handler.tags = ['owner']
 handler.command = ['addyenes', 'adddinero', 'addyen'] 
+handler.admin = true
 handler.rowner = true
 
 export default handler
