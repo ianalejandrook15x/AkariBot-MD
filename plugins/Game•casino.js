@@ -37,7 +37,7 @@ conn.reply(m.chat, '`🌸 Veamos que numeros tienen!`\n\n'+ `➠ *AkariBot* : ${
 handler.help = ['apostar *<cantidad>*']
 handler.tags = ['fun']
 handler.command = ['apostar', 'casino']
-handler.register = true
+handler.register = false
 handler.fail = null
 export default handler
 
