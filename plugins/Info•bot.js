@@ -9,8 +9,8 @@ conn.reply(m.chat, `🌸 ¡Hola! Soy Akari, en que puedo ayudarte hoy?\n\n✰ Us
 }
 
 if (chat.isBaneed) return
-if (/^akari|watanabe$/i.test(m.text)) {
-conn.reply(m.chat, `> *Hola soy AkariBot-MD y fui creada por*\n> *ianalejandrook15x* \n\n> Escribe *.menu* para ver mis comandos, recuerda no hagas spam a la bot, Disfrute de *AkariBot-MD*\n\nPσɯҽɾҽԃ Bყ Tҽαɱ SHιɳιɳɠ 🌙`, m, rcanal, )
+if (/^.qr|.code$/i.test(m.text)) {
+conn.reply(m.chat, `> *Hola los comandos ingresados no se encuentran disponibles para vincular (SUB-BOTS)* \n\n> Escribre *.code* para escanear codigo *QR*\n\n> Escribe *.serbot --code* para codigo de ocho digitos\n\n\n> Pσɯҽɾҽԃ Bყ ιαɳαʅҽʝαɳԃɾσσƙ15x`, m, rcanal, )
 }
 
 if (chat.isBaneed) return
