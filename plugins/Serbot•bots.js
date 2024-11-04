@@ -1,27 +1,79 @@
-import ws from 'ws'
+import { readdirSync, statSync, unlinkSync, existsSync, readFileSync, watch, rmSync, promises as fsPromises } from "fs";
+const fs = { ...fsPromises, existsSync };
+import path, { join } from 'path' 
+import ws from 'ws';
 
-async function handler(m, { conn: stars, usedPrefix }) {
-  let uniqueUsers = new Map()
+let handler = async (m, { conn: _envio, command, usedPrefix, args, text, isOwner}) => {
+const isCommand1 = /^(deletesesion|deletebot|deletesession|deletesesaion)$/i.test(command)  
+const isCommand2 = /^(stop|pausarai|pausarbot)$/i.test(command)  
+const isCommand3 = /^(bots|listjadibots|subbots)$/i.test(command)   
 
-  global.conns.forEach((conn) => {
-    if (conn.user && conn.ws.socket && conn.ws.socket.readyState !== ws.CLOSED) {
-      uniqueUsers.set(conn.user.jid, conn)
-    }
-  })
-
-  let users = [...uniqueUsers.values()]
-
-  let message = users.map((v, index) => `╭─⬣「 ${packname} 」⬣\n│⁖ฺ۟̇࣪·֗٬̤⃟🌸 *${index + 1}.-* @${v.user.jid.replace(/[^0-9]/g, '')}\n│❀ *Link:* https://wa.me/${v.user.jid.replace(/[^0-9]/g, '')}\n│❀ *Nombre:* ${v.user.name || '𝚂𝚄𝙱-𝙱𝙾𝚃'}\n╰─⬣`).join('\n\n')
-
-  let replyMessage = message.length === 0 ? '' : message
-  global.totalUsers = users.length
-  let responseMessage = `╭━〔 𝗦𝗨𝗕-𝗕𝗢𝗧𝗦 𝗝𝗔𝗗𝗜𝗕𝗢𝗧 🌸 〕⬣\n┃ *𝚃𝙾𝚃𝙰𝙻 𝙳𝙴 𝚂𝚄𝙱𝙱𝙾𝚃𝚂* : ${totalUsers || '0'}\n╰━━━━━━━━━━━━⬣\n\n${replyMessage.trim()}`.trim()
-
-await stars.sendMessage(m.chat, { text: responseMessage, mentions: stars.parseMention(responseMessage) }, { quoted: fkontak })
-// await conn.reply(m.chat, responseMessage, m, rcanal)
+async function reportError(e) {
+await m.reply(`🌻 Ocurrió un error.`)
+console.log(e)
 }
 
-handler.help = ['bots']
-handler.tags = ['serbot']
-handler.command = ['listjadibot', 'bots']
+switch (true) {       
+case isCommand1:
+let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
+let uniqid = `${who.split`@`[0]}`
+const path = `./${jadi}/${uniqid}`
+
+if (!await fs.existsSync(path)) {
+await conn.sendMessage(m.chat, { text: `🌻 Usted no tiene una sesión, puede crear una usando:\n${usedPrefix + command}\n\nSi tiene una *(ID)* puede usar para saltarse el paso anterior usando:\n*${usedPrefix + command}* \`\`\`(ID)\`\`\`` }, { quoted: m })
+return
+}
+if (global.conn.user.jid !== conn.user.jid) return conn.sendMessage(m.chat, {text: `🚩 Use este comando al *Bot* principal.\n\n*https://api.whatsapp.com/send/?phone=${global.conn.user.jid.split`@`[0]}&text=${usedPrefix + command}&type=phone_number&app_absent=0*`}, { quoted: m }) 
+else {
+await conn.sendMessage(m.chat, { text: `🌻 Tu sesión como *Sub-Bot* se ha eliminado` }, { quoted: m })}
+try {
+fs.rmdir(`./${jadi}/` + uniqid, { recursive: true, force: true })
+await conn.sendMessage(m.chat, { text : `Ha cerrado sesión y borrado todo rastro.` } , { quoted: m })
+} catch (e) {
+reportError(e)
+}  
+break
+
+case isCommand2:
+if (global.conn.user.jid == conn.user.jid) conn.reply(m.chat, `✨ Si no es *SubBot* comuníquese al numero principal del *Bot* para ser *SubBot*`, m)
+else {
+await conn.reply(m.chat, `🚩 Ai desactivada.`, m)
+conn.ws.close()}  
+break
+
+case isCommand3:
+//if (global.db.data.settings[conn.user.jid].jadibotmd) return m.reply(`🚩 Este comando está desactivado por mi creador.`)
+const users = [...new Set([...global.conns.filter((conn) => conn.user && conn.ws.socket && conn.ws.socket.readyState !== ws.CLOSED).map((conn) => conn)])];
+function convertirMsADiasHorasMinutosSegundos(ms) {
+var segundos = Math.floor(ms / 1000);
+var minutos = Math.floor(segundos / 60);
+var horas = Math.floor(minutos / 60);
+var días = Math.floor(horas / 24);
+segundos %= 60;
+minutos %= 60;
+horas %= 24;
+var resultado = "";
+if (días !== 0) {
+resultado += días + " días, ";
+}
+if (horas !== 0) {
+resultado += horas + " horas, ";
+}
+if (minutos !== 0) {
+resultado += minutos + " minutos, ";
+}
+if (segundos !== 0) {
+resultado += segundos + " segundos";
+}
+return resultado;
+}
+const message = users.map((v, index) => `• 「 ${index + 1} 」\n📎 Wa.me/${v.user.jid.replace(/[^0-9]/g, '')}?text=${usedPrefix}estado\n👤 Usuario: ${v.user.name || 'Sub-Bot'}\n🕑 Online: ${ v.uptime ? convertirMsADiasHorasMinutosSegundos(Date.now() - v.uptime) : 'Desconocido'}`).join('\n\n__________________________\n\n');
+const replyMessage = message.length === 0 ? `No hay Sub-Bots disponible por el momento, verifique mas tarde.` : message;
+const totalUsers = users.length;
+const responseMessage = `🌻 *LISTA DE SUBBOTS*\n\n⭐️ PUEDES PEDIR PERMISO PARA QUE TE DEJEN UNIR EL BOT A TÚ GRUPO\n\n\`\`\`CADA USUARIO SUB BOT USA FUNCIÓN COMO QUIERA, EL NÚMERO PRINCIPAL NO SE HACE RESPONSABLE DEL USO DE LA FUNCIÓN \`\`\`\n\nSUBBOT CONECTADO: ${totalUsers || '0'}\n\n${replyMessage.trim()}`.trim();
+await _envio.sendMessage(m.chat, {text: responseMessage, mentions: _envio.parseMention(responseMessage)}, {quoted: m})
+break   
+}}
+
+handler.command = ['deletesesion', 'deletebot', 'deletesession', 'deletesession', 'stop', 'pausarai', 'pausarbot', 'bots', 'listjadibots', 'subbots']
 export default handler
