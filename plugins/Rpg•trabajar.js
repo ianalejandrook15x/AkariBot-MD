@@ -17,7 +17,7 @@ user.exp += rsl
 handler.help = ['trabajar']
 handler.tags = ['rpg']
 handler.command = ['w','work', 'trabajar']
-handler.register = true 
+handler.register = false
 export default handler
 
 function toNum(number) {
