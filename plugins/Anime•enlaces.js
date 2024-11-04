@@ -23,6 +23,6 @@ handler.tags = ['anime']
 handler.command = ['animelink']
 
 handler.yenes = 1
-handler.register = true
+handler.register = false
 
 export default handler 
