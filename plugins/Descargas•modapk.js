@@ -28,7 +28,6 @@ return conn.reply(m.chat, '🛑 *Ocurrió un fallo*', m, rcanal )}}
 handler.tags = ['descargas']
 handler.help = ['apkmod']
 handler.command = ['apk', 'modapk', 'aptoide']
-handler.register = true
-handler.estrellas = 1
+handler.register = false
 
 export default handler
