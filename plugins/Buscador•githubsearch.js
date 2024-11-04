@@ -34,7 +34,7 @@ handler.help = ['githubsearch']
 handler.tags = ['buscador']
 handler.command = ['githubsearch']
 
-handler.register = true
+handler.register = false
 
 export default handler 
 
