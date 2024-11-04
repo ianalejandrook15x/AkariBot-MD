@@ -51,7 +51,7 @@ let noHandler = async (m, { conn, usedPrefix, command }) => {
     }
 };
 
-// Vincular los comandos al texto "#declaracion", "si", y "no"
+// Vincular los comandos al texto "#valentina", "si", y "no"
 handler.command = ['declaracion', 'si', 'no'];
 handler.tags = ["downloader"]
 handler.help = ["declaracion"];
