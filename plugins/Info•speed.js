@@ -43,7 +43,7 @@ conn.reply(m.chat, texto, m, rcanal, )
 handler.help = ['speed']
 handler.tags = ['info']
 handler.command = ['speed']
-handler.register = true
+handler.register = false
 export default handler
 
 function clockString(ms) {
