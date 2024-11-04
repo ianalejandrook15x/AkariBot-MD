@@ -16,5 +16,5 @@ await conn.reply(m.chat, txt, m, rcanal)
 handler.help = ['yenes']
 handler.tags = ['rpg']
 handler.command = ['wallet', 'cartera', 'yenes', 'bal', 'galletas']
-handler.register = true 
+handler.register = false
 export default handler
