@@ -37,7 +37,7 @@ user.lastmiming = new Date * 1
 handler.help = ['minar']
 handler.tags = ['rpg']
 handler.command = ['minar', 'miming', 'mine'] 
-handler.register = true 
+handler.register = false
 export default handler
 
 function pickRandom(list) {
