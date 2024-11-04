@@ -19,7 +19,7 @@ await conn.reply(m.chat, yaemori, m, fake)
 handler.help = ['botreglas']
 handler.tags = ['main']
 handler.command = ['botreglas', 'reglasdelbot', 'reglasbot', 'reglas']
-handler.register = true
+handler.register = false
 export default handler
 
 const more = String.fromCharCode(8206)
