@@ -4,10 +4,10 @@ import fetch from 'node-fetch';
 let handler = async (m, { conn, usedPrefix, command }) => {
     if (command === 'declaracion') {
         const imageUrl = 'https://qu.ax/lpPQ.jpg'; // URL de la imagen de la confesión
-        const messageText = `Hola Nombre \n\nHay algo que llevo guardando en mi corazón desde hace tiempo, algo que, a pesar de lo mucho que he intentado poner en palabras, siempre parece escaparse de ellas. Pero hoy, quiero ser valiente y decirte lo que siento\n\nDesde el primer momento en que nuestras miradas se cruzaron, sentí una conexión especial. Con cada conversación, cada sonrisa que compartimos, me he dado cuenta de que ocupas un lugar muy especial en mi vida. Me haces querer ser mejor, y contigo, todo parece más fácil, más brillante.\n\nHoy quiero confesarte que me gustas. Me gustas de una manera que ni siquiera sabía que era posible. ¿Quieres salir conmigo?\n\nPresiona "Sí" o "No" abajo para responder.`;
+        const messageText = `Hola Valentina \nVengo a decirte que de hace mucho me gustas pero no fui capaz de darte amor y cariño, te quiero pedir disculpas por mi comportamiento en dejarte hablar\nPero con el tiempo me di cuenta que el error fue mio y quiero pedirte disculpas\nEstraño los abrazos que nos dabamos demostraban cariño, realmente quiero que me perdones y empezar otra vez. \n\n¿ Me Perdonas ?.`;
 
         await conn.sendButton(m.chat, messageText, 'Declaración', imageUrl, [
-            ['Sí Acepto Salir Contigo', `${usedPrefix}Si`],
+            ['Sí Te perdono', `${usedPrefix}Si`],
             ['No Lo Siento Mucho', `${usedPrefix}No`]
         ], m);
     }
@@ -52,9 +52,9 @@ let noHandler = async (m, { conn, usedPrefix, command }) => {
 };
 
 // Vincular los comandos al texto "#declaracion", "si", y "no"
-handler.command = ['declaracion', 'si', 'no'];
+handler.command = ['perdon', 'si', 'no'];
 handler.tags = ["downloader"]
-handler.help = ["declaracion"];
+handler.help = ["perdon"];
 
 // Exportar el handler
 export default handler;
