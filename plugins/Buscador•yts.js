@@ -37,7 +37,6 @@ handler.help = ['ytsearch']
 handler.tags = ['buscador']
 handler.command = ['playlist', 'ytbuscar', 'yts', 'ytsearch']
 
-handler.register = true
-handler.estrellas = 1
+handler.register = false
 
 export default handler
