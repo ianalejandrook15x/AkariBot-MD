@@ -31,6 +31,6 @@ const handler = async (m) => {
 handler.help = ['speedtest'];
 handler.tags = ['info'];
 handler.command = ['speedtest', 'info', 'speed'];
-handler.register = true;
+handler.register = false;
 
 export default handler;
