@@ -25,7 +25,7 @@ let handler = async (m, { conn, text }) => {
    conn.fakeReply(m.chat, `⊜ *Recibiste* \n\n *+${dmt} Yenes 💴*`, who, m.text)
 }
 
-handler.help = ['addyenes *<@user>*']
+handler.help = ['addyen2 *<@user>*']
 handler.tags = ['ADMIN']
 handler.command = ['addyen2'] 
 handler.admin = true
