@@ -3,10 +3,10 @@ import fetch from 'node-fetch';
 // Handler principal para la declaración
 let handler = async (m, { conn, usedPrefix, command }) => {
     if (command === 'declaracion') {
-        const imageUrl = 'https://qu.ax/Gpobv.jpg'; // URL de la imagen de la confesión
-        const messageText = `Hola Valentina \nVengo a decirte que de hace mucho me gustas pero no fui capaz de demostrar amor y cariño, te quiero pedir disculpas por mi comportamiento en dejarte hablar\nPero con el tiempo me di cuenta que el error fue mio y quiero pedirte disculpas\nEstraño los abrazos que nos dabamos demostraban cariño, realmente quiero que me perdones y empezar otra vez. \n\n¿ Me Perdonas ?\n\n\n¿ Te gustaria salir conmigo ?`;
+        const imageUrl = 'https://qu.ax/VccqK.jpg'; // URL de la imagen de la confesión
+        const messageText = `Hola Valentina \nVengo a decirte que de hace mucho me gustas pero no fui capaz de demostrar amor y cariño, te quiero pedir disculpas por mi comportamiento en dejarte hablar\nPero con el tiempo me di cuenta que el error fue mio y quiero pedirte disculpas\nEstraño los abrazos que nos dabamos demostraban cariño, realmente quiero que me perdones y empezar otra vez. \n\n¿ Me Perdonas ?\n\n\n`;
 
-        await conn.sendButton(m.chat, messageText, 'Declaración', imageUrl, [
+        await conn.sendButton(m.chat, messageText, 'Perdoname', imageUrl, [
             ['Si Te perdono', `${usedPrefix}Si`],
             ['No Te perdono', `${usedPrefix}No`]
         ], m);
