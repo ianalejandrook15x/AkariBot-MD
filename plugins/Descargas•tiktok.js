@@ -58,7 +58,7 @@ m.react('🌸')
 handler.tags = ['descargas'];
 handler.help = ['tiktok'];
 handler.command = ['tiktok', 'ttk', 'tt'];
-handler.register = true;
+handler.register = false;
 export default handler;
 
 async function tiktokdlF(url) {
