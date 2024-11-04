@@ -2,7 +2,7 @@ import { webp2png } from '../lib/webp2mp4.js'
 
 var handler = async (m, { conn, usedPrefix, command }) => {
 
-const notStickerMessage = `*🌳 Responda a una imagen*`
+const notStickerMessage = `*Responda a una imagen*`
 if (!m.quoted) throw notStickerMessage 
 const q = m.quoted || m
 let mime = q.mediaType || ''
@@ -22,6 +22,5 @@ handler.help = ['toimg']
 handler.tags = ['transformador']
 handler.command = ['toimg', 'jpg', 'jpge', 'png']
 
-handler.yenes = 2
 
 export default handler
