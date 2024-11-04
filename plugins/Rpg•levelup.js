@@ -26,5 +26,5 @@ await conn.sendFile(m.chat, img, 'thumbnail.jpg', txt, m, null, rcanal)}}
 handler.help = ['levelup']
 handler.tags = ['rpg']
 handler.command = ['nivel', 'lvl', 'levelup', 'level'] 
-handler.register = true 
+handler.register = false 
 export default handler
