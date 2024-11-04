@@ -28,7 +28,7 @@ let handler = async (m, { conn, text }) => {
 
 handler.help = ['addyenes *<@user>*']
 handler.tags = ['owner']
-handler.command = ['addyens', 'adddinero', 'addyen'] 
+handler.command = ['addyenes', 'adddinero', 'addyen'] 
 handler.rowner = true
 
 export default handler
