@@ -2,7 +2,7 @@ import fetch from 'node-fetch';
 
 // Handler principal para la declaración
 let handler = async (m, { conn, usedPrefix, command }) => {
-    if (command === 'perdon') {
+    if (command === 'declaracion') {
         let pp = 'https://telegra.ph/file/071f2b8d26bca81578dd0.mp4'; // URL del video de perdon
         const messageText = `El usuario esta pidiendo perdon`;
 
@@ -52,9 +52,9 @@ let noHandler = async (m, { conn, usedPrefix, command }) => {
 };
 
 // Vincular los comandos al texto "#declaracion", "si", y "no"
-handler.command = ['perdon', 'si', 'no'];
+handler.command = ['declaracion', 'si', 'no'];
 handler.tags = ["downloader"]
-handler.help = ["perdon"];
+handler.help = ["declaracion"];
 
 // Exportar el handler
 export default handler;
