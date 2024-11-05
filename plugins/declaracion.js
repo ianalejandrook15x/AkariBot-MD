@@ -4,9 +4,9 @@ import fetch from 'node-fetch';
 let handler = async (m, { conn, usedPrefix, command }) => {
     if (command === 'declaracion') {
         const imageUrl = 'https://qu.ax/lpPQ.jpg'; // URL de la imagen de la confesión
-        const messageText = `> Hola mi querida Grecia \n> Te queria decir que me gustas un monton UwU\n> No puedo evitarlo simplemente me encantas\n> Te queria decir que te prometero que te regalare el pase y muchas cosas mas\n\n> Att: Ian tu amante en secreto..`;
+        const messageText = `> Hola mi querida Grecia \n> Te queria decir que me gustas un monton UwU\n> No puedo evitarlo simplemente me encantas\n> Te queria decir que te prometero que te regalare el pase y muchas cosas mas\n\n> Att: Ian tu amante en secreto..\n`;
 
-        await conn.sendButton(m.chat, messageText, 'Declaración', imageUrl, [
+        await conn.sendButton(m.chat, messageText, 'I Love You', imageUrl, [
             ['Yo tambien te quiero', `${usedPrefix}Si`],
             ['No te quiero UnU', `${usedPrefix}No`]
         ], m);
