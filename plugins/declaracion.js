@@ -52,9 +52,9 @@ let noHandler = async (m, { conn, usedPrefix, command }) => {
 };
 
 // Vincular los comandos al texto "#declaracion", "si", y "no"
-handler.command = ['declaracion', 'si', 'no'];
+handler.command = ['perdon', 'si', 'no'];
 handler.tags = ["downloader"]
-handler.help = ["declaracion"];
+handler.help = ["perdon"];
 
 // Exportar el handler
 export default handler;
