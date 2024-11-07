@@ -35,7 +35,7 @@ await conn.reply(m.chat, 'Error: intenta más tarde.', m, fake)}}}
 
 handler.help = ['chatgpt <texto>', 'ia <texto>']
 handler.tags = ['ai']
-handler.register = true
+handler.register = false
 // handler.yenes = 1
 handler.command = ['ia', 'chatgpt']
 
