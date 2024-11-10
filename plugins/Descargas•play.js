@@ -8,15 +8,15 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
     let urls = search.all[0].url;
     let body = `\`YouTube Play - AkariBot-MD\`
 
-   > *Título:* ${search.all[0].title}
-    
-   > *Vistas:* ${search.all[0].views}
-    
-   > *Duración:* ${search.all[0].timestamp}
-    
-   > *Subido:* ${search.all[0].ago}
-    
-   > *Url:* ${urls}
+ ➢   *Título:* ${search.all[0].title}
+      ┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄
+ ➢   *Vistas:* ${search.all[0].views}
+      ┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄
+ ➢   *Duración:* ${search.all[0].timestamp}  
+      ┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄
+ ➢   *Subido:* ${search.all[0].ago} 
+      ┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄
+ ➢   *Url:* ${urls}
 
 🌸 *Su ${isVideo ? 'Video' : 'Audio'} se está enviando, espere un momento...*`;
     
