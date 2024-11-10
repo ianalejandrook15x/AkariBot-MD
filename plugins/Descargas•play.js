@@ -6,21 +6,25 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
     let search = await yts(text);
     let isVideo = /vid$/.test(command);
     let urls = search.all[0].url;
-    let body = `\`YouTube Play\`
+    let body = `\`YouTube Play - AkariBot-MD\`
 
     *Título:* ${search.all[0].title}
+    
     *Vistas:* ${search.all[0].views}
+    
     *Duración:* ${search.all[0].timestamp}
+    
     *Subido:* ${search.all[0].ago}
+    
     *Url:* ${urls}
 
-🕒 *Su ${isVideo ? 'Video' : 'Audio'} se está enviando, espere un momento...*`;
+🌸 *Su ${isVideo ? 'Video' : 'Audio'} se está enviando, espere un momento...*`;
     
     conn.sendMessage(m.chat, { 
         image: { url: search.all[0].thumbnail }, 
         caption: body
     }, { quoted: m,rcanal });
-    m.react('react1')
+    m.react('✅')
 
     let res = await dl_vid(urls)
     let type = isVideo ? 'video' : 'audio';
