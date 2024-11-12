@@ -12,7 +12,6 @@ const handler = async (m, {conn, args, groupMetadata, participants, usedPrefix, 
       conn.reply(m.chat, `🌸 *Lista de numeros con el prefijo +${lol} que estan en este grupo:*\n\n` + numeros.join`\n`, m, {mentions: ps});
       break;
     case 'kicknum':
-      if (!bot.restrict) return conn.reply(m.chat, '🌸 *Este comando se encuentra inhabilitado por el creadror del bot.*', m, rcanal);
       if (!isBotAdmin) return m.reply('🌸 *El bot no es administrador*');
       await conn.reply(m.chat, `🌸 *Iniciando protocolo de eliminacion*`, m, rcanal);
       const ownerGroup = m.chat.split`-`[0] + '@s.whatsapp.net';
