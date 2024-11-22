@@ -35,19 +35,19 @@ const timeDifference = currentTime - userData.lastMessageTime
 if (userData.antiBan === 1) {
 if (userData.message < 1) {
 userData.message++  
-motive = `᥀·࣭࣪̇˖⚔️◗ 𝙉𝙤 𝙝𝙖𝙜𝙖𝙨 𝙨𝙥𝙖𝙢.`
+motive = `> No hagas spam. 🌸`
 await conn.reply(m.chat, motive, m, { mentions: [m.sender] })  
 user.messageSpam = motive
 }} else if (userData.antiBan === 2) {
 if (userData.message2 < 1) {
 userData.message2++  
-motive =  `᥀·࣭࣪̇˖⚔️◗ 𝙉𝙤 𝙝𝙖𝙜𝙖𝙨 𝙨𝙥𝙖𝙢...`
+motive =  `> No hagas spam... 🌸`
 await conn.reply(m.chat, motive, m, { mentions: [m.sender] })  
 user.messageSpam = motive
 }} else if (userData.antiBan === 3) {
 if (userData.message3 < 1) {
 userData.message3++  
-motive = `᥀·࣭࣪̇˖👺◗ 𝙎𝙚𝙧𝙖𝙨 𝙚𝙡𝙞𝙢𝙞𝙣𝙖𝙙𝙤(𝙖) 𝙥𝙤𝙧 𝙝𝙖𝙘𝙚𝙧 𝙨𝙥𝙖𝙢.`
+motive = `> seras expulsado/a por realizar mucho spam 🌸.`
 await conn.reply(m.chat, motive, m, { mentions: [m.sender] }) 
 user.messageSpam = motive
 await conn.groupParticipantsUpdate(m.chat, [sender], 'remove')
