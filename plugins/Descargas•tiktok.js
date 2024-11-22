@@ -58,6 +58,7 @@ m.react('🌸')
 handler.tags = ['descargas'];
 handler.help = ['tiktok'];
 handler.command = ['tiktok', 'ttk', 'tt'];
+handler.yenes = 5
 handler.register = false;
 export default handler;
 
