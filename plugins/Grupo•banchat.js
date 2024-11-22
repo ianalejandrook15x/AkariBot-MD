@@ -11,5 +11,6 @@ handler.command = ['banchat']
 handler.botAdmin = true
 handler.admin = true 
 handler.group = true
+handler.owner = true
 
 export default handler
