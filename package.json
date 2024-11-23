@@ -1,6 +1,6 @@
 {
   "type": "module",
-  "name": "your-project-name",
+  "name": "AkariBot-MD",
   "version": "1.0.0",
   "dependencies": {
     "mongoose": "^6.0.0"
