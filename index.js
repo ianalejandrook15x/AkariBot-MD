@@ -16,10 +16,10 @@ const { say } = cfonts
 const rl = createInterface(process.stdin, process.stdout)
 const subtitleStyle = chalk.white.bold
 const responseStyle = chalk.dim.bold
-const { Client } = from ('whatsapp-web.js');
-const mongoose = from ('mongoose');
-const qrcode = from ('qrcode-terminal');
-const BotConfig = from ('./models/botConfig'); // Modelo de configuración
+import { Client } = from 'whatsapp-web.js');
+import mongoose = from ('mongoose');
+import qrcode = from ('qrcode-terminal');
+import BotConfig = from ('./models/botConfig'); // Modelo de configuración
 
 const client = new Client();
 
