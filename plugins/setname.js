@@ -1,21 +1,20 @@
-let botName = "Ian";
+const WhatsAppAPI = require('whatsapp-api');
 
-function cambiarNombreBot(nuevoNombre) {
-  botName = nuevoNombre;
-  console.log(`El nombre del bot ha sido cambiado a: ${botName}`);
-}
+let botName = 'IanBot';
 
-function generarComando(comandoBase) {
-  return comandoBase.replace("${botname}", botName);
-}
+WhatsAppAPI.onMessage(async (message) => {
+  const { body } = message;
 
-const mensajeUsuario = "/setname AlejandroBot";
-const partesComando = mensajeUsuario.split(" ");
+  if (body.startsWith('/setname ')) {
+    const nuevoNombre = body.split(' ')[1];
 
-if (partesComando[0] === "/setname") {
-  const nuevoNombre = partesComando[1];
-  cambiarNombreBot(nuevoNombre);
-}
+    // Validación básica para evitar nombres vacíos
+    if (nuevoNombre.trim() === '') {
+      await WhatsAppAPI.sendMessage(message.from, 'Debes proporcionar un nuevo nombre.');
+      return;
+    }
 
-const comandoEjemplo = generarComando("/help ${botname}");
-console.log(comandoEjemplo); // Imprimirá: /help AlejandroBot
+    botName = nuevoNombre;
+    await WhatsAppAPI.sendMessage(message.from, `El nombre del bot ha sido cambiado a ${botName}`);
+  }
+});
