@@ -1,5 +1,5 @@
-const mongoose = require('mongoose');
-const BotConfig = require('../models/botConfig'); // Asume que tienes un modelo para almacenar la configuración del bot.
+const mongoose = from ('mongoose');
+const BotConfig = from ('../models/botConfig'); // Asume que tienes un modelo para almacenar la configuración del bot.
 
 module.exports = (client) => {
     // Escuchar los mensajes entrantes
