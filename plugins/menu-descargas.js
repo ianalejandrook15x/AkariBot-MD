@@ -18,7 +18,7 @@ const defaultMenu = {
 `.trimStart(),
     header: '「 DESCARGAS 」\n',
   body: '✿ /fb',
-  body: 'A /play
+  body: 'A /play',
   footer: '',
   after: `> ${dev}`,
 }
