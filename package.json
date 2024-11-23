@@ -2,6 +2,7 @@
 "name": "AkariBot-MD",
 "version": "2.0.7",
 "description": "Simple WhatsApp Bot Multi Device",
+"module.exports" = "BotConfig",
 "main": "index.js",
 "directories": {
 "lib": "lib",
