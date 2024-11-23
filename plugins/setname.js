@@ -1,4 +1,4 @@
-let botName = "AkariBot-MD";
+let botName = "Ian";
 
 function cambiarNombreBot(nuevoNombre) {
   botName = nuevoNombre;
