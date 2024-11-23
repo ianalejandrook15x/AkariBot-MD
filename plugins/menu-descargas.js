@@ -14,10 +14,9 @@ const defaultMenu = {
 *ੈ✩‧₊˚ Mҽɳυ  Dҽʂƈαɾɠαʂ ⋆.ೃ࿔*:･
 
 
-
 \t*C O M A N D O S* 
 `.trimStart(),
-    header: '「 %category 」\n',
+    header: '「 DESCARGAS 」\n',
   body: '✿ %cmd',
   footer: '',
   after: `> ${dev}`,
