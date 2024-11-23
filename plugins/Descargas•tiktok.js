@@ -17,7 +17,7 @@ m.react('🌸')
     const prep = generateWAMessageFromContent(m.chat, {extendedTextMessage: {text: texto, contextInfo: {externalAdReply: {title: packname, body: wm, thumbnail: icons, sourceUrl: yt}, mentionedJid: [m.sender]}}}, aa);
     await conn.relayMessage(m.chat, prep.message, {messageId: prep.key.id, mentions: [m.sender]});
     const dataFn = await conn.getFile(`${CFROSAPI}/api/tiktokv2?url=${args[0]}`);
-    const desc1n = `Tσɱҽ ʂυ ʋιԃҽσ ԃҽ Tιƙ Tσƙ 🌸`;
+    const desc1n = `> Tσɱҽ ʂυ ʋιԃҽσ ԃҽ Tιƙ Tσƙ 🌸`;
     await conn.sendMessage(m.chat, {video: dataFn.data, caption: desc1n}, {quoted: fkontak});
   } catch (ee1) {
   try {
@@ -32,23 +32,23 @@ m.react('🌸')
     try {
       const tTiktok = await tiktokdlF(args[0]);
       // let desc2 = `🔗 *Url:* ${tTiktok.video}`
-      const desc2 = `Tσɱҽ ʂυ ʋιԃҽσ ԃҽ Tιƙ Tσƙ 🌸`;
+      const desc2 = `> Tσɱҽ ʂυ ʋιԃҽσ ԃҽ Tιƙ Tσƙ 🌸`;
       await conn.sendMessage(m.chat, {video: {url: tTiktok.video}, caption: desc2}, {quoted: fkontak});
     } catch (e2) {
       try {
         const p = await fg.tiktok(args[0]);
         // let te = `*𝚄𝚂𝙴𝚁𝙽𝙰𝙼𝙴:* ${p.author || 'Indefinido'}`
-        const te = `Tσɱҽ ʂυ ʋιԃҽσ ԃҽ Tιƙ Tσƙ 🌸`;
+        const te = `> Tσɱҽ ʂυ ʋιԃҽσ ԃҽ Tιƙ Tσƙ 🌸`;
         await conn.sendMessage(m.chat, {video: {url: p.nowm}, caption: te}, {quoted: fkontak});
       } catch (e3) {
         try {
           const {author: {nickname}, video, description} = await tiktokdl(args[0]);
           const url = video.no_watermark2 || video.no_watermark || 'https://tikcdn.net' + video.no_watermark_raw || video.no_watermark_hd;
           // let cap = `*𝙽𝙸𝙲𝙺𝙽𝙰𝙼𝙴:* ${nickname || 'Indefinido'}`
-          const cap = `Tσɱҽ ʂυ ʋιԃҽσ ԃҽ Tιƙ Tσƙ 🌸`;
+          const cap = `> Tσɱҽ ʂυ ʋιԃҽσ ԃҽ Tιƙ Tσƙ 🌸`;
           await conn.sendMessage(m.chat, {video: {url: url}, caption: cap}, {quoted: fkontak});
         } catch {
-          throw `_*< DESCARGAS - TIKTOK />*_\n\n*🌟 Ocurrió un error. Por favor, inténtalo de nuevo más tarde.*`;
+          throw `_*< DESCARGAS - TIKTOK />*_\n\n*Ocurrío un error inesperado*`;
           }
         }
       }
