@@ -16,6 +16,43 @@ const { say } = cfonts
 const rl = createInterface(process.stdin, process.stdout)
 const subtitleStyle = chalk.white.bold
 const responseStyle = chalk.dim.bold
+const { Client } = require('whatsapp-web.js');
+const mongoose = require('mongoose');
+const qrcode = require('qrcode-terminal');
+const BotConfig = require('./models/botConfig'); // Modelo de configuración
+
+const client = new Client();
+
+// Conexión a MongoDB
+mongoose.connect('mongodb://localhost:27017/whatsappBot', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+});
+
+// Cargar el plugin que maneja el comando '/setnamebot'
+require('./plugins/setnamebot')(client);
+
+client.on('qr', (qr) => {
+    qrcode.generate(qr, { small: true });
+});
+
+client.on('ready', async () => {
+    console.log('Bot está listo!');
+    // Obtener el nombre del bot desde la base de datos
+    const botConfig = await BotConfig.findOne();
+    console.log(`El nombre actual del bot es: ${botConfig.botName}`);
+});
+
+client.on('message', async (message) => {
+    // Responder con el nombre actualizado del bot
+    const botConfig = await BotConfig.findOne();
+    
+    if (message.body.toLowerCase() === 'hola') {
+        message.reply(`¡Hola! Soy ${botConfig.botName}, ¿en qué te puedo ayudar?`);
+    }
+});
+
+client.initialize();
 
 let activeCollaborators = ''
 for (const key in collaborators) {
