@@ -34,7 +34,7 @@ console.error('🌸 Error al obtener la respuesta:', error)
 await conn.reply(m.chat, 'Error: intenta más tarde.', m, fake)}}}
 
 handler.help = ['chatgpt <texto>', 'ia <texto>']
-handler.tags = ['ai']
+handler.tags = ['ia']
 handler.register = false
 // handler.yenes = 1
 handler.command = ['ia', 'chatgpt']
