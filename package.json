@@ -4,6 +4,7 @@
 "description": "Simple WhatsApp Bot Multi Device",
 "main": "index.js",
 "type": "module",
+"botName": "IanBot",
 "directories": {
 "lib": "lib",
 "src": "src",
