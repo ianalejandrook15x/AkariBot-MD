@@ -8,6 +8,11 @@ module.exports = (client) => {
         if (message.body.startsWith('/setnamebot')) {
             const newName = message.body.split(' ')[1]; // Obtener el nuevo nombre del bot
 
+            if (!newName || newName.length < 3) {
+    message.reply('Por favor, ingresa un nombre válido (al menos 3 caracteres).');
+    return;
+}
+
             // Verificar si se proporcionó un nombre
             if (newName) {
                 // Actualizar el nombre del bot en la base de datos
