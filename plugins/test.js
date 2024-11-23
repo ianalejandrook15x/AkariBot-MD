@@ -1,5 +1,5 @@
 import mongoose = from 'mongoose'
-import BotConfig = from '../models/botConfig' // Asume que tienes un modelo para almacenar la configuración del bot.
+import BotConfig from './lib/mongoDB.js';
 
 module.exports = (client) => {
     // Escuchar los mensajes entrantes
