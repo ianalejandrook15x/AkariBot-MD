@@ -16,6 +16,6 @@ return conn.reply(m.chat, '🌸 *Ocurrió un fallo*', m, rcanal)
 
 handler.command = ['bard']
 handler.help = ['bard']
-handler.tags = ['ia']
+handler.tags = ['ai']
 handler.premium = false
 export default handler
