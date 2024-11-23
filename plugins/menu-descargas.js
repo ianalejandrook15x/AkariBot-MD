@@ -133,7 +133,7 @@ const pp = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://qu.ax/
 
 //await conn.reply(m.chat, '*Próximamente se remitirá el menú.*', fkontak, { contextInfo:{ forwardingScore: 2022, isForwarded: true, externalAdReply: {title: packname, body: dev, sourceUrl: redeshost, thumbnail: await (await fetch(pp)).buffer() }}})
 
-await m.react('🍁') 
+await m.react('✨') 
 
 await conn.sendMessage(m.chat, { video: { url: vid }, caption: text.trim(), contextInfo: { mentionedJid: [m.sender], isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: '120363318758721861@newsletter', newsletterName: 'Tҽαɱ Cԋαɳɳҽʅ Iαɳ 🌸', serverMessageId: -1, }, forwardingScore: 999, externalAdReply: { title: 'Aƙαɾι Bσƚ ༊', body: dev, thumbnailUrl: icono, sourceUrl: redes, mediaType: 1, renderLargerThumbnail: false,
 }, }, gifPlayback: true, gifAttribution: 0 }, { quoted: fkontak })
@@ -146,9 +146,9 @@ await conn.sendMessage(m.chat, { video: { url: vid }, caption: text.trim(), cont
     throw e
   }
 }
-handler.help = ['menu']
-handler.tags = ['main']
-handler.command = ['menu', 'help', 'allmenu', 'menucompleto'] 
+handler.help = ['menu-descargas']
+handler.tags = ['Menus']
+handler.command = ['menu-descargas', 'descargas'] 
 handler.register = false
 
 export default handler
