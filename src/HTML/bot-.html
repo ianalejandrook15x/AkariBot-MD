@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Mi Bot</title>
+    <title>Mi Bot</title>
 </head>
 <body>
-  <h1 id="AkariBot-MD"></h1>
+    <h1 id="AkariBot-MD"></h1>
 
-  <script>
-    // Código JavaScript anterior
-  </script>
+    <script>
+        // Obtener el elemento HTML donde mostraremos el nombre del bot
+        const nombreBotDisplay = document.getElementById('AkariBot-MD');
+
+        // Variable para almacenar el nombre del bot
+        let nombreBot = "Akari"; // Reemplaza "${botname}" con el nombre real de tu bot
+
+        // Función para cambiar el nombre del bot
+        function cambiarNombre(nuevoNombre) {
+            nombreBot = nuevoNombre;
+            nombreBotDisplay.textContent = nombreBot;
+        }
+
+        // Mostrar el nombre del bot por primera vez
+        nombreBotDisplay.textContent = nombreBot;
+    </script>
 </body>
 </html>
