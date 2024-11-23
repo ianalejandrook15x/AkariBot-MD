@@ -13,6 +13,6 @@ await conn.reply(m.chat, `『📣』𝙊𝙘𝙪𝙧𝙧𝙞𝙤 𝙪𝙣 𝙚�
 }}
 handler.command = ['gemini']
 handler.help = ['gemini']
-handler.tags = ['ia']
+handler.tags = ['ai']
 
 export default handler
