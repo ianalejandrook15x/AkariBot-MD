@@ -17,7 +17,7 @@ const defaultMenu = {
 \t*C O M A N D O S* 
 `.trimStart(),
     header: '「 DESCARGAS 」\n',
-  body: '✿ %cmd',
+  body: '✿ /fb',
   footer: '',
   after: `> ${dev}`,
 }
