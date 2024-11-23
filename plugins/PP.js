@@ -1,19 +1,19 @@
 import fs from 'fs';
 
 // Cargar la configuración inicial
-let config = {};
+let package = {};
 try {
-    config = JSON.parse(fs.readFileSync('config.json'));
+    config = JSON.parse(fs.readFileSync('package.json'));
 } catch (error) {
     console.error('Error al cargar la configuración:', error);
-    config = { botName: 'IanBot' }; // Valor por defecto
+    config = { botName: 'AkariBot-MD' }; // Valor por defecto
 }
 let botName = config.botName;
 
 // Función para guardar la configuración
 function saveConfig(newBotName) {
     config.botName = newBotName;
-    fs.writeFileSync('config.json', JSON.stringify(config));
+    fs.writeFileSync('package.json', JSON.stringify(config));
 }
 
 // Función para generar un comando con el nombre del bot
