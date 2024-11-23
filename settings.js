@@ -45,7 +45,6 @@ global.jadi = 'AkariJadiBot'
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
 global.packname = 'Aƙαɾι Bσƚ - MD'
-global.botname = 'Aƙαɾι'
 global.wm = 'AƙαɾιBσƚ-MD 🌸'
 global.author = 'By ianalejandrook15x'
 global.dev = 'Pσɯҽɾҽԃ Bყ Tҽαɱ Sԋιɳιɳɠ'
