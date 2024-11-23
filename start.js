@@ -43,6 +43,28 @@ return createRequire(dir)
 
 global.API = (name, path = '/', query = {}, apikeyqueryname) => (name in global.APIs ? global.APIs[name] : name) + path + (query || apikeyqueryname ? '?' + new URLSearchParams(Object.entries({...query, ...(apikeyqueryname ? {[apikeyqueryname]: global.APIKeys[name in global.APIs ? global.APIs[name] : name]} : {})})) : '');
 
+import { Client } from 'whatsapp-web.js';
+import { handleSetNameBot } from './plugins/setnamebot.js';
+import mongoose from 'mongoose';
+
+// Inicializar cliente de WhatsApp
+const client = new Client();
+
+// Conectar a MongoDB
+mongoose.connect('mongodb://localhost:27017/whatsapp-bot', { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => console.log('Conectado a la base de datos MongoDB'))
+  .catch((err) => console.error('Error de conexión a MongoDB:', err));
+
+// Evento de mensaje
+client.on('message', (message) => {
+  if (message.body.startsWith("/setnamebot")) {
+    handleSetNameBot(message, client);  // Llamar al comando para cambiar el nombre
+  }
+});
+
+client.initialize();
+
+
 global.timestamp = {start: new Date}
 
 const __dirname = global.__dirname(import.meta.url)
