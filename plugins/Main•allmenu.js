@@ -29,7 +29,7 @@ let tags = {
 }
 
 const defaultMenu = {
-  before: `Mҽɳυ ԃҽ Aƙαɾι 🌸
+  before: `Mҽɳυ ԃҽ ${botname} 🌸
 
 *ੈ✩‧₊˚ Info usuario ⋆.ೃ࿔*:･
 
