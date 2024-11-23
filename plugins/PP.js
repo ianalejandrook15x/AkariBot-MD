@@ -1,4 +1,4 @@
-const fs = require('fs');
+import fs from 'fs';
 
 // Cargar la configuración inicial
 let config = {};
