@@ -1,5 +1,5 @@
-const mongoose = from ('mongoose');
-const BotConfig = from ('../models/botConfig'); // Asume que tienes un modelo para almacenar la configuración del bot.
+import mongoose = from ('mongoose');
+import BotConfig = from ('../models/botConfig'); // Asume que tienes un modelo para almacenar la configuración del bot.
 
 module.exports = (client) => {
     // Escuchar los mensajes entrantes
