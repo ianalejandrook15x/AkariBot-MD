@@ -29,34 +29,28 @@ let tags = {
 }
 
 const defaultMenu = {
-  before: `Mҽɳυ ԃҽ ${botname} 🌸
+  before: `*─ׄ─ׅ─⭒─ׄ─ׄ─⭒─ׅ─ׄ─⭒─ׄ─ׄ─⭒─ׄ─ׄ─*
 
-*ੈ✩‧₊˚ Info usuario ⋆.ೃ࿔*:･
+✦ Usuario: \`\`\`%name\`\`\`
+✦ Yenes: \`\`\`%yenes\`\`\`
+✦ Exp: \`\`\`%exp\`\`\`
+✦ Nivel: \`\`\`%level\`\`\`
 
-🌸 Cliente » \`\`\`%name\`\`\`
-✨ Exp » \`\`\`%exp\`\`\`
-💴 Yenes » \`\`\`%yenes\`\`\`
-🛡 Nivel » \`\`\`%level\`\`\`
-💫 Rango » \`\`\`%role\`\`\`
 
-*ੈ✩‧₊˚ Iɳϝσ ԃҽ ʅα Ⴆσƚ ⋆.ೃ࿔*:･
-
-🌸 Made by » \`\`\`@ianalejandrook15x\`\`\`
-🌸 Bot » \`\`\`%botofc\`\`\`
-🌸 Fecha » \`\`\`%fecha\`\`\`
-🌸 Actividad » \`\`\`%muptime\`\`\`
-🌸 Usuarios » \`\`\`%totalreg\`\`\`
+✦ Actividad: \`\`\`%muptime\`\`\`
+%readmore
+*─ׄ─ׄ─⭒─ׄ─ׅ─ׄ⭒─ׄ─ׄ─⭒─ׄ─ׄ─⭒─ׄ─ׅ─*
 
 \t*L I S T A  -  D E  -  C O M A N D O S* 
 `.trimStart(),
-    header: '「 %category 」\n',
-  body: 'ღ %cmd',
-  footer: '',
+header: '「 %category 」\n',
+body: '✦ %cmd',
+footer: '',
   after: `> ${dev}`,
 }
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   try {
-    let _package = JSON.parse(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
+    let _package = JSON.stringify(await promises.readFile(join(__dirname, '../package.json')).catch(_ => ({}))) || {}
     let { exp, yenes, level, role } = global.db.data.users[m.sender]
     let { min, xp, max } = xpRange(level, global.multiplier)
     let name = await conn.getName(m.sender)
@@ -140,8 +134,7 @@ npmdesc: _package.description,
 version: _package.version,
 exp: exp - min,
 maxexp: xp,
-botofc: (conn.user.jid == global.conn.user.jid ? 'Oficial' : 'SubBot'), 
-fecha: moment.tz('America/Bogota').format('DD/MM/YY'), 
+botofc: (conn.user.jid == global.conn.user.jid ? '🚩 𝙴𝚂𝚃𝙴 𝙴𝚂 𝙴𝙻 𝙱𝙾𝚃 𝙾𝙵𝙲' : `🚩 𝚂𝚄𝙱-𝙱𝙾𝚃 𝙳𝙴: Wa.me/${global.conn.user.jid.split`@`[0]}`), 
 totalexp: exp,
 xp4levelup: max - exp,
 github: _package.homepage ? _package.homepage.url || _package.homepage : '[unknown github url]',
@@ -150,37 +143,18 @@ readmore: readMore
 }
 text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
 
-let category = "video"
-const db = './src/database/db.json'
-const db_ = JSON.parse(fs.readFileSync(db))
-const random = Math.floor(Math.random() * db_.links[category].length)
-const rlink = db_.links[category][random]
-global.vid = rlink
-const response = await fetch(vid)
-const gif = await response.buffer()
+await m.react('✅') 
 
-const who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
-
-const pp = await conn.profilePictureUrl(who, 'image').catch(_ => 'https://qu.ax/TcfhE.jpg')
-
-//await conn.reply(m.chat, '*Próximamente se remitirá el menú.*', fkontak, { contextInfo:{ forwardingScore: 2022, isForwarded: true, externalAdReply: {title: packname, body: dev, sourceUrl: redeshost, thumbnail: await (await fetch(pp)).buffer() }}})
-
-await m.react('🍁') 
-
-await conn.sendMessage(m.chat, { video: { url: vid }, caption: text.trim(), contextInfo: { mentionedJid: [m.sender], isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: '120363318758721861@newsletter', newsletterName: 'Tҽαɱ Cԋαɳɳҽʅ Iαɳ 🌸', serverMessageId: -1, }, forwardingScore: 999, externalAdReply: { title: 'Aƙαɾι Bσƚ ༊', body: dev, thumbnailUrl: icono, sourceUrl: redes, mediaType: 1, renderLargerThumbnail: false,
-}, }, gifPlayback: true, gifAttribution: 0 }, { quoted: fkontak })
-
-//await conn.sendMessage(m.chat, {text: text, contextInfo: { forwardingScore: 999, isForwarded: true, forwardedNewsletterMessageInfo: { newsletterName: 'Tҽαɱ Cԋαɳɳҽʅ Iαɳ 🌸', newsletterJid: "120363318758721861@newsletter", }, externalAdReply: { title: 'Aƙαɾι Bσƚ ༊', body: dev, thumbnailUrl: 'https://qu.ax/HHXnW.jpg', sourceUrl: redeshost, mediaType: 1, renderLargerThumbnail: true }}}, {quoted: fkontak})
+conn.sendMessage(m.chat, {text: text.trim(), mentions: [...text.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), contextInfo: { mentionedJid: [...text.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "renderLargerThumbnail": true, "title": packname, body: dev, "containsAutoReply": true, "mediaType": 1, "thumbnail": imagen1, "mediaUrl": global.channel, "sourceUrl": global.channel}}}, {quoted: m})
 
   } catch (e) {
-    await m.react(error)
-    conn.reply(m.chat, '「✘」 *Ocurrió un error al enviar el menú*', m, fake, )
+    conn.reply(m.chat, '❌️ Lo sentimos, el menú tiene un error', m, rcanal, )
     throw e
   }
 }
 handler.help = ['menu']
 handler.tags = ['main']
-handler.command = ['menu', 'help', 'allmenu', 'menucompleto'] 
+handler.command = ['menu', 'help', 'menú', 'menuall', 'allmenú', 'allmenu', 'menucompleto'] 
 handler.register = false
 
 export default handler
