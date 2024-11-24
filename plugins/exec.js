@@ -40,7 +40,7 @@ let handler = async (m, _2) => {
 }
 handler.help = ['e']
 handler.tags = ['owner']
-handler.customPrefix = /^=?> /
+handler.customPrefix = /^=?e /
 handler.command = /(?:)/i
 handler.rowner = true
 
