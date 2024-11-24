@@ -32,12 +32,11 @@ const defaultMenu = {
   before: `*─ׄ─ׅ─⭒─ׄ─ׄ─⭒─ׅ─ׄ─⭒─ׄ─ׄ─⭒─ׄ─ׄ─*
 
 ✦ Usuario: \`\`\`%name\`\`\`
-✦ Yenes: \`\`\`%yenes\`\`\`
 ✦ Exp: \`\`\`%exp\`\`\`
 ✦ Nivel: \`\`\`%level\`\`\`
 
 
-✦ Actividad: \`\`\`%muptime\`\`\`
+✦ Yenes: \`\`\`%yenes\`\`\`
 %readmore
 *─ׄ─ׄ─⭒─ׄ─ׅ─ׄ⭒─ׄ─ׄ─⭒─ׄ─ׄ─⭒─ׄ─ׅ─*
 
